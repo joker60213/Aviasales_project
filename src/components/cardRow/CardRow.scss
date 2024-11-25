@@ -1,0 +1,48 @@
+.card-row{
+
+    display: grid;
+    grid-template-rows: 18px 21px  ;
+    grid-template-columns: auto auto ;
+
+    grid-template-areas: 
+    'area0 area1 area2 '
+    'area3 area4 area5 '
+    ; 
+
+}
+.row__style{
+    font-size: 12px;
+    color: #A0B0B9;
+
+}
+
+.row__style-1{
+    font-size: 14px;
+    color:#4A4A4A;
+    font-weight: 600;
+}
+
+.mow-htk{
+    grid-area: area0; 
+    
+}
+
+.on-the-way{
+    grid-area: area1; 
+}
+
+.transfers{
+    grid-area: area2; 
+}
+
+.time-mow-htk{
+    grid-area: area3 ;
+}
+
+.time-on-the-way{
+    grid-area: area4 ;
+}
+
+.cities{
+    grid-area: area5 ;
+}

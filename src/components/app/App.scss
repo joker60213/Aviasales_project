@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/scss2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+.app {
+    background-color: #F3F7FA;
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    padding:  0 40px 40px 40px;
+}
+
+.app-wrapper{
+    // border: 1px solid red;
+    max-width: 754px;
+    min-height: 100vh;
+    display: grid; 
+
+    grid-template-rows: auto auto auto ;
+    grid-template-columns: auto auto auto ;
+    gap: 20px;
+
+    grid-template-areas: 
+        'label0 label0 label0 '
+        'label1 label2 label2 '
+        'label1 label3 label3 '
+        'label1 label4 label4 '
+       ; 
+}
+
+.logo{
+    grid-area: label0 ;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.filters{
+    grid-area: label1 ;
+}
+
+.toggle{
+    grid-area: label2 ;
+}
+
+.card-list{
+    grid-area: label3 ;
+}
+
+
+
+@media (max-width: 769px){
+    .app-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        padding: 10px 0;
+    }
+
+}
+
+@media (max-width: 320px){
+    .app {
+        overflow:scroll;
+    }
+    
+}

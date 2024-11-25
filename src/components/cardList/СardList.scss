@@ -1,0 +1,24 @@
+.card-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center ;
+}
+
+.button-show-more{
+    grid-area: label4; 
+    width: 502px;
+    height: 50px;
+    background: #2196F3;
+    color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 540px){
+    .button-show-more{ 
+        width: 320px;
+    }
+}

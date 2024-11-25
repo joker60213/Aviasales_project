@@ -1,0 +1,123 @@
+.card{
+    width: 502px;
+    min-height: 184px;
+    box-sizing: border-box;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-main{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.price{
+    font-size: 24px;
+    color: #2196F3;
+    font-weight: 600;
+}
+
+.row__style{
+    font-size: 12px;
+    color: #A0B0B9;
+}
+
+.row__style-1{
+    font-size: 14px;
+    color:#4A4A4A;
+    font-weight: 600;
+}
+
+.card-row-there{
+    
+    display: grid;
+    grid-template-rows: 18px 21px  ;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    'area0 area1 area2 '
+    'area3 area4 area5 '
+    ; 
+}
+
+.mow-htk{
+    grid-area: area0;   
+}
+
+.on-the-way{
+    grid-area: area1; 
+}
+
+.transfers{
+    grid-area: area2; 
+}
+
+.time-mow-htk{
+    grid-area: area3 ;
+}
+
+.time-on-the-way{
+    grid-area: area4 ;
+}
+
+.cities{
+    grid-area: area5 ;
+}
+
+.card-row-back{
+    
+    display: grid;
+    grid-template-rows: 18px 21px  ;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+    grid-template-areas: 
+    'area0 area1 area2 '
+    'area3 area4 area5 '
+    ; 
+}
+
+.mow-htk-back{
+    grid-area: area0;   
+}
+
+.on-the-way-back{
+    grid-area: area1; 
+}
+
+.transfers-back{
+    grid-area: area2; 
+}
+
+.time-mow-htk-back{
+    grid-area: area3 ;
+}
+
+.time-on-the-way-back{
+    grid-area: area4 ;
+}
+
+.cities-back{
+    grid-area: area5 ;
+}
+
+
+@media (max-width: 540px){
+
+    .card{
+        width: 320px;
+        padding: 10px;
+        gap: 10px;
+    }
+}
